@@ -1,0 +1,22 @@
+{
+  "name": "Steem Private Messages Notifier",
+  "description": "A single icon to alert of new messages and as a shortcut button.",
+  "version": "1.0",
+  "icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png" },
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "browser_action": {
+    "default_title": "Steem Private Messages Notifier",
+    "default_icon": "icon.png"
+  },
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["steem.min.js","background.js"],
+    "persistent": true
+  },
+  "manifest_version": 2
+}

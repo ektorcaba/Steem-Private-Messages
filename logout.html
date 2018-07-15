@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Steem Private messages</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+var delete_cookie = function(name) {
+    document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+};
+
+
+
+	delete_cookie('username');
+	delete_cookie('access_token');
+	delete_cookie('memo_key');
+	location.href = "/";
+
+
+</script>
+</body>
+</html>
